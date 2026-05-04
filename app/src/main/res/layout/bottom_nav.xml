@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/bg_card"
+    android:baselineAligned="false"
+    android:elevation="12dp"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp">
+
+    <!-- BERANDA -->
+    <TextView
+        android:id="@+id/navBeranda"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        app:drawableTopCompat="@drawable/ic_home"
+        app:drawableTint="@color/green"
+
+        android:drawablePadding="4dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="6dp"
+
+        android:gravity="center"
+        android:text="@string/nav_beranda"
+        android:textColor="@color/green"
+        android:textSize="11sp"/>
+
+    <!-- PESANAN -->
+    <TextView
+        android:id="@+id/navPesanan"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        app:drawableTopCompat="@drawable/ic_order"
+        app:drawableTint="@color/gray"
+
+        android:drawablePadding="4dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="6dp"
+
+        android:gravity="center"
+        android:text="@string/nav_pesanan"
+        android:textColor="@color/gray"
+        android:textSize="11sp"/>
+
+    <!-- KERANJANG -->
+    <FrameLayout
+        android:id="@+id/navKeranjang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvNavKeranjangLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:drawableTopCompat="@drawable/ic_cart"
+            app:drawableTint="@color/gray"
+
+            android:drawablePadding="4dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="6dp"
+
+            android:gravity="center"
+            android:text="@string/nav_keranjang"
+            android:textColor="@color/gray"
+            android:textSize="11sp"/>
+
+        <!-- BADGE -->
+        <TextView
+            android:id="@+id/tvCartBadge"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_badge"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <!-- PROFIL -->
+    <TextView
+        android:id="@+id/navProfil"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        app:drawableTopCompat="@drawable/ic_profile"
+        app:drawableTint="@color/gray"
+
+        android:drawablePadding="4dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="6dp"
+
+        android:gravity="center"
+        android:text="@string/nav_profil"
+        android:textColor="@color/gray"
+        android:textSize="11sp"/>
+
+</LinearLayout>
